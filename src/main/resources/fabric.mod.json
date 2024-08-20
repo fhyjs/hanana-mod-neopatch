@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "app",
+  "id": "patcher",
   "version": "1.0.0",
-  "name": "app",
-  "description": "the HANANA app.",
+  "name": "加载器补丁",
+  "description": "修补应用程序来适配新加载器.",
   "authors": [
-    "Me!"
+    "HANANA"
   ],
   "contact": {
     "homepage": "https://hanana2.link/"
@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "org.eu.hanana.reimu.hnn.neoloader.mod.ModFabric"
+      "org.eu.hanana.reimu.hnn.neopatch.ModFabric"
     ]
   },
   "mixins": [

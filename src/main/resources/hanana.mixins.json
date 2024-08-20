@@ -1,13 +1,14 @@
 {
   "required": true,
-  "package": "org.eu.hanana.reimu.hnn.neoloader.mixin",
-  "compatibilityLevel": "JAVA_18",
+  "package": "org.eu.hanana.reimu.hnn.neopatch.mixin",
+  "compatibilityLevel": "JAVA_16",
   "minVersion": "0.8",
   "client": [
   ],
   "mixins": [
-    "MixinAnvilMenu",
-    "MixinMain"
+    "MixinMain",
+    "MixinModManager",
+    "MixinModManager$ListComponent"
   ],
   "injectors": {
     "defaultRequire": 1
