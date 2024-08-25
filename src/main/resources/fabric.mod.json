@@ -15,6 +15,9 @@
   "entrypoints": {
     "main": [
       "org.eu.hanana.reimu.hnn.neopatch.ModFabric"
+    ],
+    "post_start": [
+      "org.eu.hanana.reimu.hnn.neopatch.PostFabricStart"
     ]
   },
   "mixins": [
@@ -26,5 +29,10 @@
   },
   "suggests": {
     "another-mod": "*"
+  },
+  "custom":{
+    "legacyMods":[
+      "patcher_legacy"
+    ]
   }
 }

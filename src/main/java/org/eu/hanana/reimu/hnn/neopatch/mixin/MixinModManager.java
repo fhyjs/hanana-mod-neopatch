@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 @Mixin(ModManDialog.class)
 public class MixinModManager extends JDialog {
@@ -23,9 +24,15 @@ public class MixinModManager extends JDialog {
     @Inject(remap = false,method = "<init>",at=@At("RETURN"))
     public void init(Window owner, CallbackInfo ci){
         this.setTitle(this.getTitle()+" | NeoLoader提供");
-        for (Mod neoMod : ModFabric.neoMods) {
-            ModManDialog.ListComponent listComponent = new ModManDialog.ListComponent(neoMod);
-            listModel.addElement(listComponent);
+        var toRemove = new ArrayList<ModManDialog.ListComponent>();
+        for (int i = 0; i < listModel.size(); i++) {
+            var item = listModel.get(i);
+            if (ModFabric.getParent(item.mod())!=null){
+                toRemove.add(item);
+            }
+        }
+        for (ModManDialog.ListComponent listComponent : toRemove) {
+            listModel.removeElement(listComponent);
         }
     }
     @Mixin(ModManDialog.ListComponent.class)
