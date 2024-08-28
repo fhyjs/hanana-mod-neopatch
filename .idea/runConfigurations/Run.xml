@@ -5,7 +5,7 @@
     <option name="MAIN_CLASS_NAME" value="org.eu.hanana.reimu.hnn.neoloader.Main" />
     <module name="org.eu.hanana.reimu.hnn.neopatch.neopatch.main" />
     <option name="PROGRAM_PARAMETERS" value="--appjar D:\\proj\\hanana_app\\build\\libs\\hanana_app-1.0-SNAPSHOT-all.jar --cp-mods &quot;D:\proj\hanana-neopatch\neopatch\build\libs\neopatch-1.0-SNAPSHOT.jar&quot;" />
-    <option name="VM_PARAMETERS" value="-Djava.library.path=../win64 -Dfabric.development=false" />
+    <option name="VM_PARAMETERS" value="-Djava.library.path=../win64" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../hanana_app/run" />
     <method v="2">
       <option name="Make" enabled="true" />
