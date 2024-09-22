@@ -24,7 +24,7 @@ import java.util.Optional;
 public class ModFabric implements ModInitializer {
     public static final String MOD_ID = "patcher";
     public static final List<Mod> neoMods = new ArrayList<>();
-    public static final LogCategory logCategory = new LogCategory("App Patcher");
+    public static final LogCategory logCategory = LogCategory.createCustom("App Patcher");
     public static Unsafe theUnsafe;
     @Override
     public void onInitialize() {
