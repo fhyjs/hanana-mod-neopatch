@@ -29,6 +29,7 @@ dependencies {
     implementation(fileTree("D:\\proj\\hanana_app\\build\\libs\\hanana_app-1.0-SNAPSHOT-all.jar"))
     implementation(fileTree("D:\\proj\\mcmod-wheelchair\\hanana-neoloader\\build\\libs\\hanana-neoloader-1.0-SNAPSHOT.jar"))
     implementation(fileTree("D:\\proj\\hanana_app\\build\\libs\\libs"))
+    implementation(fileTree("D:\\proj\\hanana_app\\build\\libs\\mods\\hanana_app_runman_mod-1.0-SNAPSHOT.jar"))
     //compileOnly(fileTree("D:\\proj\\mcmod-wheelchair\\hanana-neoloader\\build\\libs\\hanana-neoloader-1.0-SNAPSHOT-all.jar"))
     //implementation "org.eu.hanana.reimu.hnn.neoloader:hanana-neoloader:1.0-SNAPSHOT"
 }

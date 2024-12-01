@@ -7,10 +7,13 @@
   ],
   "mixins": [
     "MixinFMLLoggingUtil",
+    "MixinJNA",
     "MixinMain",
     "MixinModLoader",
     "MixinModManager",
-    "MixinModManager$ListComponent"
+    "MixinModManager$ListComponent",
+    "MixinRunManModDialog",
+    "MixinUpdateChecker"
   ],
   "injectors": {
     "defaultRequire": 1

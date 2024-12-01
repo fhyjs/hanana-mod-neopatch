@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06617630-aac8-49ad-8a54-5642bcfe8681" name="更改" comment="?">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="06617630-aac8-49ad-8a54-5642bcfe8681" name="更改" comment="1.1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinJNA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinRunManModDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinUpdateChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hanana.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hanana.mixins.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,11 +112,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/proj/hanana_app/build/libs",
+    "last_opened_file_path": "D:/proj/hanana_app",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.MixinExtras Expressions"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.MixinExtras Expressions",
+    "应用程序.Run.executor": "Coverage"
   }
 }]]></component>
   <component name="RebelAgentSelection">
@@ -130,7 +132,7 @@
       <recent name="org.eu.hanana.reimu.hnn.neopatch.mixin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.neopatch [jar]">
+  <component name="RunManager" selected="应用程序.Run">
     <configuration name="neopatch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -236,26 +238,24 @@
       <option name="project" value="LOCAL" />
       <updated>1726989321112</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.1">
+      <option name="closed" value="true" />
+      <created>1733034130557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733034130557</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tencent://" />
     <MESSAGE value="?" />
-    <option name="LAST_COMMIT_MESSAGE" value="?" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../hanana_app/build/libs/hanana_app-1.0-SNAPSHOT-all.jar!/org/eu/hanana/reimu/hnnapp/mods/events/BrowserLoadEvent.class</url>
-          <line>24</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/neopatch$Run.ic" NAME="Run 覆盖结果" MODIFIED="1724156361946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/neopatch$Run.ic" NAME="Run 覆盖结果" MODIFIED="1733045053155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
