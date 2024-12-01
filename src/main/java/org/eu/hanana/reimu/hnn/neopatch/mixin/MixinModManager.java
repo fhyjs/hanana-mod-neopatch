@@ -1,5 +1,6 @@
 package org.eu.hanana.reimu.hnn.neopatch.mixin;
 
+import net.fabricmc.loader.impl.FabricLoaderImpl;
 import org.eu.hanana.reimu.hnn.neopatch.ModFabric;
 import org.eu.hanana.reimu.hnnapp.detailed.dialog.ModManDialog;
 import org.eu.hanana.reimu.hnnapp.mods.Mod;
@@ -46,8 +47,8 @@ public class MixinModManager extends JDialog {
         }
         @Inject(method = "getScrText",at = @At("RETURN"),remap = false,cancellable = true)
         public void getScrText(CallbackInfoReturnable<String> callbackInfoReturnable){
-            String returnValue = callbackInfoReturnable.getReturnValue();
-            callbackInfoReturnable.setReturnValue(returnValue+ (ModFabric.isNeoMod(mod)?"""
+            StringBuilder returnValue = new StringBuilder(callbackInfoReturnable.getReturnValue());
+            returnValue.append (ModFabric.isNeoMod(mod)?"""
                     ======
                     使用新加载器加载
                     """:
@@ -55,7 +56,14 @@ public class MixinModManager extends JDialog {
                     ======
                     使用旧加载器加载
                     """
-            ));
+            );
+            if (mod.modData!=null||ModFabric.isNeoMod(mod)) {
+                var nmdo = FabricLoaderImpl.INSTANCE.getModContainer(mod.id);
+                if (nmdo.isPresent() || mod.modData != null) {
+                    returnValue.append("\nversion: ").append(ModFabric.isNeoMod(mod)&& nmdo.isPresent()? nmdo.get().getMetadata().getVersion():mod.modData.version);
+                }
+            }
+            callbackInfoReturnable.setReturnValue(returnValue.toString());
         }
     }
 }

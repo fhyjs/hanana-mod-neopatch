@@ -11,6 +11,7 @@ import org.eu.hanana.reimu.hnnapp.ModLoader;
 import org.eu.hanana.reimu.hnnapp.mods.Event;
 import org.eu.hanana.reimu.hnnapp.mods.ModEntry;
 import org.eu.hanana.reimu.hnnapp.mods.events.AppEvent;
+import org.eu.hanana.reimu.hnnapp.mods.events.BrowserLoadEvent;
 import org.eu.hanana.reimu.hnnapp.mods.events.PostInitModsEvent;
 import org.eu.hanana.reimu.hnnapp.mods.events.RegNativesEvent;
 
@@ -40,5 +41,17 @@ public class ModMain {
                 true,
                 true
         );
+    }
+    @Event
+    public void onWebLoadEnd(BrowserLoadEvent.End event){
+        // 创建 JavaScript 代码，向 <head> 添加 <script> 标签
+        String jsCode =
+                "var script = document.createElement('script');" +
+                        "script.type = 'text/javascript';" +
+                        "script.src = 'https://unpkg.com/@ruffle-rs/ruffle';" + // 外部脚本地址
+                        "document.head.appendChild(script);";
+
+        // 在主框架中执行 JavaScript
+        event.cefBrowser.getMainFrame().executeJavaScript(jsCode, event.cefBrowser.getMainFrame().getURL(), 0);
     }
 }

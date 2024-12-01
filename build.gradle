@@ -7,14 +7,30 @@ version = '1.0-SNAPSHOT'
 sourceCompatibility = '18'
 targetCompatibility = '18'
 repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
     mavenCentral()
+    maven {
+        url "https://maven.fabricmc.net/"
+    }
+    maven {
+        url = uri("https://maven.pkg.github.com/fhyjs/hanana-neoloader")
+        credentials {
+            username = gitUsername
+            password = gitTOKEN
+        }
+    }
 }
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation(fileTree("D:\\proj\\hanana_app\\build\\libs\\hanana_app-1.0-SNAPSHOT-all.jar"))
-    implementation(fileTree("D:\\proj\\mcmod-wheelchair\\hanana-neoloader\\build\\libs\\hanana-neoloader-1.0-SNAPSHOT-all.jar"))
+    implementation(fileTree("D:\\proj\\mcmod-wheelchair\\hanana-neoloader\\build\\libs\\hanana-neoloader-1.0-SNAPSHOT.jar"))
+    implementation(fileTree("D:\\proj\\hanana_app\\build\\libs\\libs"))
+    //compileOnly(fileTree("D:\\proj\\mcmod-wheelchair\\hanana-neoloader\\build\\libs\\hanana-neoloader-1.0-SNAPSHOT-all.jar"))
+    //implementation "org.eu.hanana.reimu.hnn.neoloader:hanana-neoloader:1.0-SNAPSHOT"
 }
 
 test {

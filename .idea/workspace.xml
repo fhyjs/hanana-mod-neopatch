@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06617630-aac8-49ad-8a54-5642bcfe8681" name="更改" comment="?">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/ModMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -71,6 +78,9 @@
     &quot;accountId&quot;: &quot;31798c46-e261-49a7-8014-d717584a63e6&quot;
   }
 }</component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -90,7 +100,9 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Run.executor": "Debug",
     "Gradle.neopatch [:org.eu.hanana.reimu.hnn.neoloader.Main.main()].executor": "Debug",
+    "Gradle.neopatch [build].executor": "Run",
     "Gradle.neopatch [jar].executor": "Run",
+    "Gradle.构建 neopatch.executor": "Run",
     "JavaClassFindUsagesOptions.isDerivedClasses": "true",
     "JavaClassFindUsagesOptions.isFieldsUsages": "true",
     "JavaClassFindUsagesOptions.isMethodsUsages": "true",
@@ -99,7 +111,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/proj/mcmod-wheelchair/hanana-neoloader",
+    "last_opened_file_path": "D:/proj/hanana_app/build/libs",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -119,6 +131,28 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.neopatch [jar]">
+    <configuration name="neopatch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="neopatch [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,11 +176,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.neopatch [build]" />
       <item itemvalue="Gradle.neopatch [jar]" />
       <item itemvalue="应用程序.Run" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.neopatch [build]" />
         <item itemvalue="Gradle.neopatch [jar]" />
       </list>
     </recent_temporary>
@@ -192,13 +228,32 @@
       <option name="project" value="LOCAL" />
       <updated>1724842393684</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="?">
+      <option name="closed" value="true" />
+      <created>1726989321112</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726989321112</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tencent://" />
     <MESSAGE value="?" />
     <option name="LAST_COMMIT_MESSAGE" value="?" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../hanana_app/build/libs/hanana_app-1.0-SNAPSHOT-all.jar!/org/eu/hanana/reimu/hnnapp/mods/events/BrowserLoadEvent.class</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/neopatch$Run.ic" NAME="Run 覆盖结果" MODIFIED="1724156361946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
