@@ -8,4 +8,5 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ModLoader.class)
 public class MixinModLoader {
+    //@Inject(method = {"<init>"})
 }

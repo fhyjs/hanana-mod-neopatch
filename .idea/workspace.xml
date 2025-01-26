@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06617630-aac8-49ad-8a54-5642bcfe8681" name="更改" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinJNA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinRunManModDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinUpdateChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run.xml" afterDir="false" />
+    <list default="true" id="06617630-aac8-49ad-8a54-5642bcfe8681" name="更改" comment="small patch for fml 0.16.9">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinAboutApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinJNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinJNA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/eu/hanana/reimu/hnn/neopatch/mixin/MixinModLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hanana.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hanana.mixins.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,30 +96,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Run.executor": "Debug",
-    "Gradle.neopatch [:org.eu.hanana.reimu.hnn.neoloader.Main.main()].executor": "Debug",
-    "Gradle.neopatch [build].executor": "Run",
-    "Gradle.neopatch [jar].executor": "Run",
-    "Gradle.构建 neopatch.executor": "Run",
-    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
-    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
-    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/proj/hanana_app",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.MixinExtras Expressions",
-    "应用程序.Run.executor": "Coverage"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Run.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.neopatch [:org.eu.hanana.reimu.hnn.neoloader.Main.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.neopatch [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.neopatch [jar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 neopatch.executor&quot;: &quot;Run&quot;,
+    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/proj/hanana_app/run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.MixinExtras Expressions&quot;,
+    &quot;应用程序.Run.executor&quot;: &quot;Coverage&quot;,
+    &quot;应用程序.RunFabricDbg.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -132,7 +133,7 @@
       <recent name="org.eu.hanana.reimu.hnn.neopatch.mixin" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Run">
+  <component name="RunManager" selected="Gradle.neopatch [build]">
     <configuration name="neopatch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -181,6 +182,7 @@
       <item itemvalue="Gradle.neopatch [build]" />
       <item itemvalue="Gradle.neopatch [jar]" />
       <item itemvalue="应用程序.Run" />
+      <item itemvalue="应用程序.RunFabricDbg" />
     </list>
     <recent_temporary>
       <list>
@@ -246,14 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733034130557</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="small patch for fml 0.16.9">
+      <option name="closed" value="true" />
+      <created>1733046070915</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733046070915</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tencent://" />
     <MESSAGE value="?" />
     <MESSAGE value="1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1" />
+    <MESSAGE value="small patch for fml 0.16.9" />
+    <option name="LAST_COMMIT_MESSAGE" value="small patch for fml 0.16.9" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/neopatch$Run.ic" NAME="Run 覆盖结果" MODIFIED="1733045053155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

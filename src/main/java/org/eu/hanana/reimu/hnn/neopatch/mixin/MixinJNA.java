@@ -11,6 +11,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(JNA.class)
 public class MixinJNA {
+    static {
+        System.out.println("MixinJNA successfully loaded!");
+    }
     @Inject(at=@At("HEAD"),cancellable = true,method = {"init"})
     private static void init(CallbackInfo ci){
         if (Datas.args.contains("/no-jna")) {

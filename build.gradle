@@ -4,8 +4,8 @@ plugins {
 
 group = 'org.eu.hanana.reimu.hnn.neopatch'
 version = '1.0-SNAPSHOT'
-sourceCompatibility = '18'
-targetCompatibility = '18'
+sourceCompatibility = '21'
+targetCompatibility = '21'
 repositories {
     maven {
         url 'https://maven.aliyun.com/repository/public/'
